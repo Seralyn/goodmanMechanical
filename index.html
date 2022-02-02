@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/assets/CGMfavicon.ico">
+
+  <!-- IMPORT BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Goodman Mechanical</title>
+</head>
+
+<style>
+  body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+  }
+
+  @media (max-width: 1300px) {
+        #logoIMG {
+        width: 279;
+        height: 46; 
+        }
+    }
+
+    #logoIMG img {
+        width: 316;
+        height: 61; 
+    }
+
+  #requestQuoteBanner {
+    background-color: rgb(22, 22, 167) !important;
+    color: white !important;
+    max-width: 100% !important;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-top: 87px;
+  }
+
+  #quoteBTN {
+    background-color: rgb(216, 216, 216);
+    margin-top: 10px;
+    color: black;
+    min-width: 70px;
+    min-height: 50px;
+    font-size: 1.1em;
+  }
+
+  .nav-item {
+    color: rgb(45, 45, 45) !important;
+    font-size: 1.5em;
+
+  }
+
+  .nav-link {
+    /* margin-right: 16%; */
+    min-width: 150px;
+  }
+
+  .navbar-nav {
+    margin-left: 12%;
+  }
+
+
+
+  #bannerIMG {
+    width: 100%;
+    opacity: 50%;
+  }
+
+  #belowBannerTXT {
+    margin-top: 5%;
+  }
+
+  #whyChooseText {
+    margin-bottom: 4%;
+  }
+
+  .blurb {
+    margin-bottom: 5%;
+  }
+
+  #services,
+  #about,
+  #contact,
+  #serviceArea {
+    padding-top: 120px;
+  }
+
+  .blueContainer {
+    background-color: rgb(22, 22, 167) !important;
+    color: white !important;
+    max-width: 100% !important;
+    padding-bottom: 5%
+  }
+
+  .whiteContainer {
+    padding-bottom: 5%;
+  }
+
+  #map {
+    height: 800px;
+    visibility: visible;
+    margin-bottom: 400px;
+    margin-top: 4%;
+  }
+
+  /* QUOTE PAGE CSS */
+  #formBox {
+        margin-top: 8%;
+        margin-bottom: 10%;
+    }
+
+  /* NAVBAR HOVER EFFECT */
+
+  .nav {
+
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+
+  .nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    paddin: 0;
+  }
+
+  .nav a {
+    padding: .5em .8em;
+    color: rgba(255, 255, 255, .5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #1b18a8;
+    border-right: 3px solid #2b28cb;
+    transform: translate(-100%, 50%);
+  }
+
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #1b18a8;
+    border-left: 3px solid #2b28cb;
+    transform: translate(100%, -50%)
+  }
+
+  .nav a:hover:before,
+  .nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  .nav a:hover {
+    color: #3DA35D;
+  }
+</style>
+
+<body>
+  <!-- NAVBAR START -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #ffffff;">
+
+    <a class="navbar-brand" href="#"><img src="assets/images/logo02_large_screen.png" width="316" height="61"
+        alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav align-items-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#serviceArea">Service Area</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- CONTENT START -->
+  <div class="container" id="requestQuoteBanner">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <h1>Experience you can rely on.</h1>
+        <h3>Request a quote today!</h3>
+      </div>
+      <div class="col-3 align-self-center">
+        <button class="btn btn-primary" id="quoteBTN" onclick="window.location.href='/quote.html'">Get a Quote</button>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row justify-content-center">
+        
+    </div> -->
+  <img id="bannerIMG" src="assets/images/banner01.jpg" alt="">
+  <div class="container" id="belowBannerTXT">
+    <div class="row justify-content-center" id="whyChooseText">
+      <h1>Why Choose Goodman Mechanical?</h1>
+    </div>
+    <div class="row justify-content-between">
+
+      <div class="col text-center">
+        <img class="blurb" src="assets/images/review.png" width="100" height="100" alt="">
+        <h5>Proven Track Record</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque error voluptate neque reprehenderit
+          doloremque impedit aspernatur distinctio accusantium, ratione placeat quibusdam saepe excepturi sunt. Sapiente
+          laborum perspiciatis repudiandae iste fugiat.</p>
+      </div>
+      <div class="col text-center">
+        <img class="blurb" src="assets/images/experience.png" width="100" height="100" alt="">
+        <h5>30 years of Experience</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam voluptas hic voluptatum consequatur
+          incidunt doloribus, libero quae, placeat cupiditate vel repudiandae nemo vero ex. Pariatur reprehenderit
+          voluptate inventore. Facilis!</p>
+      </div>
+      <div class="col text-center">
+        <img class="blurb" src="assets/images/certification.png" width="100" height="100" alt="">
+        <h5>Fully Licensed</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur blanditiis itaque id ullam provident
+          asperiores iure suscipit dolores dolore, quod possimus veritatis eius dolor consequuntur fugiat voluptatum,
+          explicabo rem veniam!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-gradient blueContainer">
+    <div class="container">
+    <div class="row text-center" id="services">
+      <div class='col'>
+        <h1>Services</h1><br><br>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-5">
+        <br>
+        <h4>Hydronic piping Installation and repair </h4>
+        <br>
+        <h4>Pump service and rebuilding </h4>
+        <br>
+        <h4>Hot water and steam boiler service and inspection </h4>
+        <br>
+        <h4>Commercial HVAC service repair and installation </h4>
+      </div>
+      <div class="col-5">
+        <br>
+        <h4>Planned maintenance programs </h4>
+        <br>
+        <h4>Filter service </h4>
+        <br>
+        <h4>Natural gas service and installation </h4>
+        <br>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container whiteContainer">
+    <div class="row text-center" id="about">
+      <div class="col">
+        <h1>About</h1>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur blanditiis itaque id ullam provident
+          asperiores iure suscipit dolores dolore, quod possimus veritatis eius dolor consequuntur fugiat voluptatum,
+          explicabo rem veniam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur blanditiis itaque id ullam provident
+          asperiores iure suscipit dolores dolore, quod possimus veritatis eius dolor consequuntur fugiat voluptatum,
+          explicabo rem veniam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur blanditiis itaque id ullam provident
+          asperiores iure suscipit dolores dolore, quod possimus veritatis eius dolor consequuntur fugiat voluptatum,
+          explicabo rem veniam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur blanditiis itaque id ullam provident
+          asperiores iure suscipit dolores dolore, quod possimus veritatis eius dolor consequuntur fugiat voluptatum,
+          explicabo rem veniam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur blanditiis itaque id ullam provident
+          asperiores iure suscipit dolores dolore, quod possimus veritatis eius dolor consequuntur fugiat voluptatum,
+          explicabo rem veniam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur blanditiis itaque id ullam provident
+          asperiores iure suscipit dolores dolore, quod possimus veritatis eius dolor consequuntur fugiat voluptatum,
+          explicabo rem veniam!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-gradient blueContainer">
+    <div class="row text-center" id="contact">
+      <div class="col">
+        <h1>Contact</h1>
+        <br>
+        <h5>Chris Goodman</h5>
+        
+        <p>Phone: (901)-355-5752 <br>
+        Email: chris@goodmanmechanical.net</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container whiteContainer">
+    <div class="row text-center" id="serviceArea">
+      <div class="col">
+        <h1>Service Area</h1>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <p>Proudly servicing DeSoto and Shelby Counties in Southwest TN and Northwest MS since 1993.</p>
+        <small>If you are not far outside of the service area, give us a call anyway!</small>
+        <br>
+      </div>
+
+    </div>
+
+    <div class="col" id="map"></div>
+  </div>
+
+
+
+  <!-- CONTENT END -->
+
+
+  <!-- IMPORT BOOSTRAP JS | JQUERY | POPPER.JS DEPENDENCIES -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- GOOGLE MAP API -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgJLOqwFafl_uYmxAcJ5CpzdbadJax4Yw&callback=initMap&v=weekly"
+    async></script>
+
+  <!-- GOOGLE MAP LOGIC -->
+  <script type="text/javascript">
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 35.117500, lng: -89.971107 },
+        zoom: 10,
+      });
+
+
+      // Define the LatLng coordinates for the polygon's path.
+      const desotoCoords = [
+        { lat: 34.993417736301815, lng: -89.72330070568246 }, //top right  -> clockwise
+        { lat: 34.771367534176136, lng: -89.72272196604587 },
+        { lat: 34.771367534176136, lng: -89.72272196604587 },
+        { lat: 34.713691366100186, lng: -90.01704415435574 },
+        { lat: 34.77101826353746, lng: -90.20088975784276 },
+        { lat: 34.85892057001404, lng: -90.20245762190773 },
+        { lat: 34.87072579188303, lng: -90.31371156519415 },
+        { lat: 34.91251975826378, lng: -90.23960203248049 },
+        { lat: 34.95251896406063, lng: -90.24379344334338 },
+        { lat: 34.99526152639638, lng: -90.30853240905887 }  //top left
+      ];
+
+      const shelbyCoords = [
+        { lat: 35.39476084022827, lng: -90.04309793871505 }, //top left
+        { lat: 35.3836688422221, lng: -89.63831135119224 }, // top right
+        { lat: 34.9952756161689, lng: -89.64406067210464 }, // bottom right
+        { lat: 34.99665297382054, lng: -90.2993736996871 }, //bottom left
+        { lat: 35.18379725793427, lng: -90.0649239875187 }, // left middle
+      ];
+      // Construct the polygon.
+      const serviceAreaHighlight = new google.maps.Polygon({
+        paths: [desotoCoords, shelbyCoords],
+        strokeColor: "#FFFF00",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#FFFF00",
+        fillOpacity: 0.35,
+      });
+
+      serviceAreaHighlight.setMap(map);
+    }
+
+  </script>
+
+  <!-- ATTRIBUTION -->
+  <small><a href="https://www.vecteezy.com/free-vector/air-conditioning">Air Conditioning Vectors by
+      Vecteezy</a></small>
+  <a href="https://www.flaticon.com/free-icons/review" title="review icons">Review icons created by Freepik -
+    Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/experience" title="experience icons">Experience icons created by Freepik
+    - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/experience" title="experience icons">Experience icons created by Culmbio
+    - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/air-conditioner" title="air conditioner icons">Air conditioner icons
+    created by Smashicons - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/air-conditioner" title="air conditioner icons">Air conditioner icons
+    created by Freepik - Flaticon</a>
+</body>
+
+</html>
