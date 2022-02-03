@@ -8,186 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/CGMfavicon.ico">
 
+    <!-- IMPORT CSS STYLE -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- IMPORT BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Goodman Mechanical</title>
 </head>
 
-<style>
-    @media only screen and (max-width: 1300px) {
-        #logoIMG {
-        width: 279;
-        height: 46; 
-        }
-    }
-
-    body {
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-weight: 300;
-    }
-
-    #logoIMG img {
-        width: 316;
-        height: 61; 
-    }
-
-    #requestQuoteBanner {
-        background-color: rgb(22, 22, 167) !important;
-        color: white !important;
-        max-width: 100% !important;
-        padding-bottom: 1%;
-        padding-top: 1%;
-        margin-top: 87px;
-    }
-
-    #quoteBTN {
-        background-color: rgb(216, 216, 216);
-        margin-top: 10px;
-        color: black;
-        min-width: 70px;
-        min-height: 50px;
-        font-size: 1.1em;
-    }
-
-    .nav-item {
-        color: rgb(45, 45, 45) !important;
-        font-size: 1.5em;
-
-    }
-
-    .nav-link {
-        /* margin-right: 16%; */
-        min-width: 150px;
-    }
-
-    .navbar-nav {
-        margin-left: 12%;
-    }
-
-
-
-    #bannerIMG {
-        width: 100%;
-        opacity: 50%;
-    }
-
-    #belowBannerTXT {
-        margin-top: 5%;
-    }
-
-    #whyChooseText {
-        margin-bottom: 4%;
-    }
-
-    .blurb {
-        margin-bottom: 5%;
-    }
-
-    #services,
-    #about,
-    #contact,
-    #serviceArea {
-        padding-top: 120px;
-    }
-
-    .blueContainer {
-        background-color: rgb(22, 22, 167) !important;
-        color: white !important;
-        max-width: 100% !important;
-        padding-bottom: 5%
-    }
-
-    .whiteContainer {
-
-    }
-
-    #map {
-        height: 800px;
-        visibility: visible;
-        margin-bottom: 400px;
-        margin-top: 4%;
-    }
-
-    /* QUOTE PAGE CSS */
-    #formBox {
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
-    /* NAVBAR HOVER EFFECT */
-
-    .nav {
-
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 600;
-    }
-
-    .nav * {
-        box-sizing: border-box;
-        transition: all .35s ease;
-    }
-
-    .nav li {
-        display: inline-block;
-        list-style: outside none none;
-        margin: .5em 1em;
-        paddin: 0;
-    }
-
-    .nav a {
-        padding: .5em .8em;
-        color: rgba(255, 255, 255, .5);
-        position: relative;
-        text-decoration: none;
-        font-size: 20px;
-    }
-
-    .nav a::before,
-    .nav a::after {
-        content: '';
-        height: 14px;
-        width: 14px;
-        position: absolute;
-        transition: all .35s ease;
-        opacity: 0;
-    }
-
-    .nav a::before {
-        content: '';
-        right: 0;
-        top: 0;
-        border-top: 3px solid #1b18a8;
-        border-right: 3px solid #2b28cb;
-        transform: translate(-100%, 50%);
-    }
-
-    .nav a:after {
-        content: '';
-        left: 0;
-        bottom: 0;
-        border-bottom: 3px solid #1b18a8;
-        border-left: 3px solid #2b28cb;
-        transform: translate(100%, -50%)
-    }
-
-    .nav a:hover:before,
-    .nav a:hover:after {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-
-    .nav a:hover {
-        color: #3DA35D;
-    }
-</style>
-
 <body>
     <!-- NAVBAR START -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #ffffff;">
 
-        <a class="navbar-brand" href="index.html"><img src="assets/images/logo02_large_screen.png" id="logoIMG" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo02_large_screen.png" id="logoIMG"
+                alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -195,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav nav align-items-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#services">Services</a>
@@ -218,10 +53,10 @@
 
     <div class="container">
         <div class="row justify-content-center" id="formBox">
-            <div class="col-6">
+            <div class="col">
                 <h3 class="text-center">Request a Quote Today</h3>
                 <br><br>
-                <form action="GET">
+                <form method="POST" name="emailForm" action="form-to-email.php">
                     <h5>Customer Information</h5>
                     <div class="form-group">
                         <label for="firstName">First Name</label>
@@ -249,17 +84,17 @@
                     <h5>Project Address</h5>
                     <div class="form-group">
                         <label for="streetAddress">Street Address</label>
-                        <input type="" class="form-control" name="streetAddress" required>
+                        <input type="text" class="form-control" name="streetAddress" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="addressTwo">Address Line 2</label>
-                        <input type="" class="form-control" name="addressTwo">
+                        <label for="addressLineTwo">Address Line 2</label>
+                        <input type="text" class="form-control" name="addressLineTwo">
                     </div>
                     <div class="row">
                         <div class="col-8 form-group">
                             <label for="customerCity">City</label>
-                            <input type="" class="form-control" name="customerCity" required>
+                            <input type="text" class="form-control" name="customerCity" required>
                         </div>
 
                         <div class="col-4 form-group">
@@ -272,13 +107,67 @@
                     </div>
                     <div class="form-group">
                         <label for="customerZip">Zip</label>
-                        <input type="" class="form-control" name="customerZip" required>
+                        <input type="text" class="form-control" name="customerZip" required>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label for="prefCont">Preferred Contact Method</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" value="Phone">
+                                    <label class="form-check-label" for="flexRadioDefault1">Phone</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" value="Email">
+                                    <label class="form-check-label" for="flexRadioDefault2">Email</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" value="Phone or Email">
+                                    <label class="form-check-label" for="flexRadioDefault3">Either is fine</label>
+                                </div>
 
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeOfDay">Time of Day (Phone Contact)</label><br>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall" value="Morning">
+                                    <label class="form-check-label" for="flexCheckChecked">Morning</label><br>
+                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall" value="Afternoon">
+                                    <label class="form-check-label" for="flexCheckChecked">Afternoon</label><br>
+                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall" value="Evening">
+                                    <label class="form-check-label" for="flexCheckChecked">Evening</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-8">
+                            <label for="descriptionMessage">Comment:</label><br>
+                            <textarea rows="2" style="height: 80%; width: 100%" id="descriptionMessage"
+                                name="descriptionMessage"></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 
     <!-- FORM END -->
+
+    <footer>
+        <div class="container">
+          <div class="row justify-content-around">
+        <small>Copyright Chris Goodman Mechanical 2022&copy;</small>
+        <small><a href="attribution.html">Resource Attribution</a></small>
+      </div>
+      </div>
+      </footer>
