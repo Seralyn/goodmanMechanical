@@ -8,6 +8,7 @@
     $client_city = $_POST['customerCity'];
     $client_state = $_POST['customerState']; 
     $client_zip = $_POST['customerZip'];
+    $requested_service = $_POST['typeOfService'];
     $client_preferred_contact_method = $_POST['flexRadioDefault'];
     $client_preferred_call_time = $_POST['timeOfDayCall'];
     $client_comment = $_POST['descriptionMessage'];
@@ -21,6 +22,7 @@
     "Email: $client_email\n".
     "Phone Number: $client_phone\n".
     "Address: $client_street_address, $client_street_address_2, $client_city, $client_state, $client_zip\n".
+    "Regarding: $requested_service\n".
     "Preferred Contact Method: $client_preferred_contact_method\n".
     "If Phone is preferred contact, this time of day: $client_preferred_call_time\n".
     "Client Comments: $client_comment";

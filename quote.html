@@ -109,6 +109,50 @@
                         <label for="customerZip">Zip</label>
                         <input type="text" class="form-control" name="customerZip" required>
                     </div>
+
+
+
+
+                    <br>
+                    <div class="form-group">
+                        <label for="typeOfService"><h5>Regarding which Service? (check all that apply)</h5></label><br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="form-check col-md-4">
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Hydronic Piping Installation">
+                                    <label class="form-check-label" for="flexCheckChecked">Hydronic piping Installation</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Hyronic Piping Repair">
+                                    <label class="form-check-label" for="flexCheckChecked">Hydronic piping Repair</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Pump-Related (Repair/Rebuild)</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Boiler Service/Rebuilding</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Boiler Inspection</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Commercial HVAC Repair</label><br>
+                                </div>
+
+                                <div class="form-check col-md-8">
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Commercial HVAC Installation</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Planned Maintenance Program</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Filter Service</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Natural Gas Service</label><br>
+                                    <input class="form-check-input" type="checkbox" name="typeOfService" value="Pump-related">
+                                    <label class="form-check-label" for="flexCheckChecked">Natural Gas Installation</label><br>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                     <br>
                     <div class="row">
                         <div class="col-4">
@@ -135,11 +179,14 @@
                             <div class="form-group">
                                 <label for="timeOfDay">Time of Day (Phone Contact)</label><br>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall" value="Morning">
+                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall"
+                                        value="Morning">
                                     <label class="form-check-label" for="flexCheckChecked">Morning</label><br>
-                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall" value="Afternoon">
+                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall"
+                                        value="Afternoon">
                                     <label class="form-check-label" for="flexCheckChecked">Afternoon</label><br>
-                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall" value="Evening">
+                                    <input class="form-check-input" type="checkbox" name="timeOfDayCall"
+                                        value="Evening">
                                     <label class="form-check-label" for="flexCheckChecked">Evening</label>
                                 </div>
                             </div>
@@ -162,24 +209,24 @@
     </div>
 
     <!-- FORM END -->
-<!-- IMPORT BOOSTRAP JS | JQUERY | POPPER.JS DEPENDENCIES -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-crossorigin="anonymous"></script>
+    <!-- IMPORT BOOSTRAP JS | JQUERY | POPPER.JS DEPENDENCIES -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
 
-    <footer>
-        <div class="container">
-          <div class="row justify-content-around">
-        <small>Copyright Chris Goodman Mechanical 2022&copy;</small>
-        <small><a href="attribution.html">Resource Attribution</a></small>
-      </div>
-      </div>
-      </footer>
+<footer>
+    <div class="container">
+        <div class="row justify-content-around">
+            <small>Copyright Chris Goodman Mechanical 2022&copy;</small>
+            <small><a href="attribution.html">Resource Attribution</a></small>
+        </div>
+    </div>
+</footer>
